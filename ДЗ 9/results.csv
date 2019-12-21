@@ -1,0 +1,4 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1576947279070,1110,HTTP Request,200,OK,Thread Group 1-1,text,true,,573,135,1,1,https://postman-echo.com/get?userId=777,1108,0,923
+1576947280247,142,HTTP Request 2,200,OK,Thread Group 1-1,text,true,,571,135,1,1,https://postman-echo.com/get?userId=779,142,0,0
+1576947280389,42008,HTTP Request 3,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to postman-echo.com:8080 [postman-echo.com/34.202.227.208, postman-echo.com/54.162.80.56] failed: Connection timed out: connect",Thread Group 1-1,text,false,"The operation lasted too long: It took 42,008 milliseconds, but should not have lasted longer than 5,000 milliseconds.",2903,0,1,1,https://postman-echo.com:8080/get?userId=777,0,0,42008
