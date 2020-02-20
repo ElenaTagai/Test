@@ -1,0 +1,21 @@
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+var number1 = 2;
+
+var number2 = 3;
+
+var number3 = 4;
+
+var number4 = number1 + number2 + number3;
+console.log (number4);
+
+    
+pm.test("x-forwarded-port", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.headers['x-forwarded-port']).to.equal("443");
+    var number5 = Number (jsonData.headers['x-forwarded-port']);
+    var number6 = number5 + 3;
+    console.log (number6);
+});
